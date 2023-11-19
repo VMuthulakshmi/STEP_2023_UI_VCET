@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.login-background {
+    flex-basis: 75%;
+    height: 100vh;
+    background-image: url('../resources/images/login-background.jpg');
+}
+
+.login-form {
+    flex-basis: 25%;
+    padding: 20px;
+}

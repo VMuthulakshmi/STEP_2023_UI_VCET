@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "../styles/ordersPageStyles.css";
 import HeaderBar from "../components/HeaderBar";
-import { RestaurantService } from "../services/RestaurantService";
 import OrdersView from "../components/OrdersView";
 import CartView from "../components/CartView";
+import { RestaurantService } from "../services/RestaurantService";
+
+import "../styles/ordersPageStyles.css";
 
 const OrdersPage = () => {
 

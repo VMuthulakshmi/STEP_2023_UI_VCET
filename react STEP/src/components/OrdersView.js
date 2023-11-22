@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import OrderItem from "./OrderItem";
 import "../styles/ordersViewStyles.css";
 

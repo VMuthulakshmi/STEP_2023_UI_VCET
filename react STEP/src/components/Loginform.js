@@ -1,17 +1,18 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../resources/images/logo.png";
 import TextInput from '../components/TextInput';
 import Button from '../components/Button';
 import '../styles/loginformStyles.css';
-import { useState } from "react";
+
 
 const Loginform = () => {
 
     let [username, setUsername] = useState("shuvethram");
     let [password, setPassword] = useState();
 
-    const buttonHandler = () => {
-        console.log("clicked");
-    }
+    const navigate = useNavigate();
+
     return (<div className="login-form-container">
         <div className='app-logo'>
             <img src={logo} alt="foodie-app" />
@@ -33,8 +34,8 @@ const Loginform = () => {
         onChangeHandler={setPassword}
         />
         <Button name="Add" type="submit"
-            onClickHandler={buttonHandler} />
-        <p className='forgot-password'>Forgot Password? <a href=''><b>click here</b></a></p>
+            onClickHandler={() => navigate('restaurantList')} />
+        <p className='forgot-password'>Forgot Password? <a href='/resturantList'><b>click here</b></a></p>
     </div>)
 }
 

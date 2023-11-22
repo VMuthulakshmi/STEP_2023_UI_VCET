@@ -69,12 +69,12 @@ const OrdersPage = () => {
 
   const calculateTotal = cart => {
     //Calculate Totals and update
-    // cart.subTotal = 0;
-    // for (let item of cart.items) {
-    //   cart.subTotal = cart.subTotal + item.price * item.quantity;
-    // }
-    // cart.grandTotal = cart.subTotal + cart.deliveryCharges - cart.coupon;
-    // cart.grandTotal = cart.grandTotal > 0 ? cart.grandTotal : 0;
+    cart.subTotal = 0;
+    for (let item of cart.items) {
+      cart.subTotal = cart.subTotal + item.price * item.quantity;
+    }
+    cart.grandTotal = cart.subTotal + cart.deliveryCharges - cart.coupon;
+    cart.grandTotal = cart.grandTotal > 0 ? cart.grandTotal : 0;
     setOrderState({...orderState, cart });
   };
 

@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `cd react\ STEP`
-Go to the project folder,
+Go to the project folder.
 
 ### `npm i`
 Install the packages.
